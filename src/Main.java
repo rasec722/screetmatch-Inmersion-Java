@@ -24,14 +24,24 @@ public class Main {
         }else{
             System.out.println("Pelicula retro que vale la pena ver");
         }
-        for(int i=0; i <3; i++){
+        /*for(int i=0; i <3; i++){
             System.out.println("Ingresa la nota que le das a la pelicula N: ");
             double notaUsuario = sc.nextDouble();
             mediaEvaluacionUsuario = mediaEvaluacionUsuario+notaUsuario;
+        }*/
+
+        //Misma instruccion de arriba, utilizando ciclo while.
+
+        int i=1;
+        while (i <= 3){
+            System.out.println("Ingresa la nota que le das a la pelicula N: ");
+            double notaUsuario = sc.nextDouble();
+            mediaEvaluacionUsuario = mediaEvaluacionUsuario+notaUsuario;
+            i++;
         }
         System.out.println("La media de la pelicula por el usuario:"+ mediaEvaluacionUsuario/3);
 
-        
+
     }
 
 
