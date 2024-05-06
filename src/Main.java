@@ -1,45 +1,45 @@
-import java.util.Scanner;
-
+import Modelo.Pelicula;
+import Modelo.Serie;
 public class Main {
     public static void main(String[] args) {
-        int fechaPelicula = 1999;
-        int fechaReciente = 2023;
-        double evaluacion =4.5;
-        double mediaEvaluacion = (4.5+4.8+3)/3;
-        double mediaEvaluacionUsuario = 0;
-        boolean incluyePlanBasico = true;
-        String nombre = "Pelicula n";
-        String sinopsis = "";
-        Scanner sc = new Scanner(System.in);
+
+        Principal principal = new Principal();
+        principal.muestraElMenu();
 
 
-        System.out.println("Pelicula: " + nombre);
-        System.out.println("Fecha de lanzamiento: " + fechaPelicula);
-        System.out.println("Valoracion de la pelicula: " + evaluacion);
-        System.out.println("Permiso de acceso a la pelicula:"+ incluyePlanBasico);
-        System.out.println("Media de evaluacion: " + mediaEvaluacion);
+    /*    Pelicula matrix = new Pelicula(); //Tipo de dato de referencia.
+        matrix.setNombre("matrix");
+        matrix.setTiempoDeDuracionEnMinutos(120);
+        matrix.setFechaDeLanzamiento(1999);
+        matrix.setPlanBasicoIncluido(true);
+        matrix.setSinopsis("La película Matrix sigue a  un joven pirata informático . " +
+                "Durante el día trabaja en una empresa de servicios informáticos pero  en las noches piratea bases de datos e invade sistemas de alta seguridad. " +
+                "Morpheus, un líder rebelde, lo contacta y lo invita a descubrir una verdad oculta sobre la realidad.  " +
+                "Una persona que vendrá a salvar a la Humanidad de la simulación. ¡Una emocionante aventura en un mundo oscuro y peligroso! ");
 
-        if(fechaPelicula >= fechaReciente){
-            System.out.println("Pelicula popular");
-        }else{
-            System.out.println("Pelicula retro que vale la pena ver");
-        }
-        /*for(int i=0; i <3; i++){
-            System.out.println("Ingresa la nota que le das a la pelicula N: ");
-            double notaUsuario = sc.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario+notaUsuario;
-        }*/
+        matrix.muestraFichaTecnica(); */
 
-        //Misma instruccion de arriba, utilizando ciclo while.
+        //Dato para serie.
+       /* Serie friends = new Serie();
+        friends.setNombre("Friends");
+        friends.setFechaDeLanzamiento(1996);
+        friends.setTemporadas(10);
+        friends.setEpisodiosPorTemporadas(22);
+        friends.setDuracionEnMinutosPorEpisodios(30);
+        friends.setPlanBasicoIncluido(true);
+        friends.setSinopsis("************");
+        friends.muestraFichaTecnica();
+        */
 
-        int i=1;
-        while (i <= 3){
-            System.out.println("Ingresa la nota que le das a la pelicula N: ");
-            double notaUsuario = sc.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario+notaUsuario;
-            i++;
-        }
-        System.out.println("La media de la pelicula por el usuario:"+ mediaEvaluacionUsuario/3);
+          //Datos para otra pelicula.
+        /*Pelicula encanto =new Pelicula();
+        encanto.setNombre("Encanto");
+        encanto.setTiempoDeDuracionEnMinutos(120);
+        encanto.setFechaDeLanzamiento(2022);
+        encanto.setPlanBasicoIncluido(true);
+        encanto.setSinopsis("La película Encanto nos lleva al corazón de Colombia, donde seguimos la increíble aventura de una joven y su familia." +
+                " Sorprendentemente, todos los miembros del clan tienen poderes mágicos, excepto la protagonista, Mirabel");
+        encanto.muestraFichaTecnica();*/
 
 
     }
