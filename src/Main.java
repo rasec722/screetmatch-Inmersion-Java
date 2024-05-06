@@ -31,16 +31,7 @@ public class Main {
         }
         System.out.println("La media de la pelicula por el usuario:"+ mediaEvaluacionUsuario/3);
 
-        //Misma instruccion de arriba, utilizando ciclo while.
-        mediaEvaluacionUsuario=0;
-        int i=1;
-        while (i <= 3){
-            System.out.println("Ingresa la nota que le das a la pelicula N: ");
-            double notaUsuario = sc.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario+notaUsuario;
-            i++;
-        }
-        System.out.println("La media de la pelicula por el usuario:"+ mediaEvaluacionUsuario/3);
+        
     }
 
 
